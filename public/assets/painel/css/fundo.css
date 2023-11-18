@@ -1,0 +1,11 @@
+body {
+    background: url('../img/inicio.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.frase {
+    margin-left: 700px;
+    margin-top: 230px;
+    color: white;
+}

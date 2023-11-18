@@ -1,0 +1,17 @@
+body{
+    background: url('../img/inicio.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.frase{
+    width: 700px;
+    margin-top: 150px;
+    color: white;
+}
+
+.autor{
+    margin-left: 580px;
+    color: white;
+}

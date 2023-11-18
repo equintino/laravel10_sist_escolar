@@ -1,0 +1,46 @@
+/*
+    Created on : 22/09/2019, 14:30:19
+    Author     : edmilson
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.seletor-para-algum-widget {
+    box-sizing: content-box;
+}
+
+#nome-pagina {
+    margin-right: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.titulo-pg {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.actions {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.edit {
+    background: #24248c;
+}
+
+.delete {
+    background: #c62828;
+}
+
+.actions:hover {
+    text-decoration: none;
+}
