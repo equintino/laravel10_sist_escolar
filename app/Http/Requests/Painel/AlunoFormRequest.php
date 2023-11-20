@@ -27,7 +27,7 @@ class AlunoFormRequest extends FormRequest
             'uf'            => 'required',
             'municipio'     => 'required',*/
             // 'turno'         => 'required',
-            // 'turma'         => 'required'
+            'turma_id'         => 'required'
         ];
     }
 

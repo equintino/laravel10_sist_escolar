@@ -113,7 +113,7 @@ class PainelAlunoController extends Controller {
             $insertImg = $image->create($_FILES['pic']);
 	        $dados['image_id'] = $insertImg->id;
         } catch (\Exception $e) {
-            dd($e);
+            return print $e->getMessage();
         }
 
         try {
@@ -130,8 +130,8 @@ class PainelAlunoController extends Controller {
         } catch  ( \Exception $e ) {
             $html = '<h2 style="background: lightpink; padding: 70px 0 20px 20px">Erro ao GRAVAR no banco.</h2><button style="background: lightpink;font-weight: bolder;padding: 10px" onclick="history.go(-1)">VOLTAR</button>';
 
-            dd($e);
-            return $e['message'];
+            return print $e->getMessage();
+            // return $e->message;
         }
 
     }
