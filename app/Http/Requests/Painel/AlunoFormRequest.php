@@ -30,5 +30,4 @@ class AlunoFormRequest extends FormRequest
             'turma_id'         => 'required'
         ];
     }
-
 }

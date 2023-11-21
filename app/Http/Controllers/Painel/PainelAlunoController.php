@@ -95,7 +95,6 @@ class PainelAlunoController extends Controller {
     public function store(AlunoFormRequest $request)
     {
         $dados = array_filter($request->except('_token'));
-
         $cadastro = $this->aluno;
         $matricula = $this->matricula;
         $image = $this->image;
