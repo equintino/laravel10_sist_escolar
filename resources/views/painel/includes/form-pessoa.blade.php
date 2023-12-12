@@ -83,8 +83,10 @@
 	    <legend>Dados Pessoais
             <span style="font-size: 12px;color:red;margin-left: 10px">* campos obrigatórios.</span>
 
-	        @if($tipo=='aluno')
-            <span style='float: right'>Matrícula Nº {{ isset($mat) ? $mat : '0000' }}</span>
+	        @if ($tipo=='aluno')
+
+            <span style='float: right'>Matrícula Nº {{ $mat !== '00000' ? $mat : 'Sem Matrícula' }}</span>
+
 	        @endif
 
 	    </legend>

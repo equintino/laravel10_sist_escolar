@@ -32,3 +32,21 @@
     </tbody>
 </table>
 @endsection
+<script>
+// (delTurma = () => {
+//                                     setTimeout(() => {
+//                                         const rows = document.querySelectorAll('table tbody tr')
+//                                         for (let x = 0; x < rows.length; x++) {
+//                                             let content = rows[x].textContent
+//                                             if (content.indexOf('test turma') !== -1) {
+//                                                 let view = rows[x].querySelector('.delete').parentElement
+//                                                 view.onclick = (e) => {
+//                                                     e.preventDefault()
+//                                                     window.location.assign(url="<?= route('turma.show', ['id' =>   170]) ?>")
+//                                                 }
+//                                                 view.dispatchEvent(new Event('click'))
+//                                             }
+//                                         }
+//                                     }, 100)
+//                                 })()
+</script>

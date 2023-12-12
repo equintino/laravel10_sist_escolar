@@ -72,16 +72,19 @@
 @endsection
 
 <script>
-    setTimeout(() => {
-        const form = document.querySelector('form#cad-turma')
-        form.onsubmit = (e) => {
-            e.preventDefault()
-            if (!form.querySelector('[data]')) {
-                return alert('Existe alunos matriculados nesta turma')
-            } else {
-                const conf = confirm('Deseja realmente excluir esta turma?')
-                if (conf) form.submit()
+    let readyPage = setInterval(() => {
+        if (document.readyState === 'complete') {
+            clearInterval(readyPage)
+            const form = document.querySelector('form#cad-turma')
+            form.onsubmit = (e) => {
+                e.preventDefault()
+                if (!form.querySelector('[data]')) {
+                    return alert('Existem alunos matriculados nesta turma')
+                } else {
+                    const conf = confirm('Deseja realmente excluir esta turma?')
+                    if (conf) form.submit()
+                }
             }
         }
-    }, 100)
+    }, 10)
 </script>

@@ -139,10 +139,10 @@ class PainelAlunoController extends Controller {
     {
         $dados = $request->except('_token','_method');
         $matricula = $this->matricula->where('aluno_id', $dados['id'])->get()->first();
-        if (!empty($matricula)) {
+        if (!empty($matricula) && !empty($dados['turma_id'])) {
             $matricula->turma_id = $dados['turma_id'];
             $matricula->update();
-        } else {
+        } elseif (!empty($dados['id']) && !empty($dados['turma_id'])) {
             $this->matricula->create( [
                 'aluno_id'  =>  $dados['id'],
                 'turma_id'  =>  $dados['turma_id'],
