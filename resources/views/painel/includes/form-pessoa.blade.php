@@ -85,7 +85,7 @@
 
 	        @if ($tipo=='aluno')
 
-            <span style='float: right'>Matrícula Nº {{ $mat !== '00000' ? $mat : 'Sem Matrícula' }}</span>
+            <span style='float: right'>Matrícula Nº {{ !empty($mat) && $mat !== '00000' ? $mat : 'Sem Matrícula' }}</span>
 
 	        @endif
 
