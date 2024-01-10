@@ -19,6 +19,13 @@ class PainelTurmaController extends Controller
     private $matricula;
     private $image;
 
+    /**
+     * @turma Models\Turma
+     * @aluno Models\Aluno
+     * @professor Models\Professor
+     * @matricula Models\Matricula
+     * @image Models\Image
+     */
     public function __construct(Turma $turma, Aluno $aluno, Professor $professor, Matricula $matricula, Image $image)
     {
         $this->turma = $turma;
@@ -104,6 +111,9 @@ class PainelTurmaController extends Controller
         return view('painel.turma.cadastro', compact('pg','origem','type'));
     }
 
+    /**
+     * @request Requests\Painel\TurmaFormRequest
+     */
     public function store(TurmaFormRequest $request)
     {
         $dados = array_filter($request->except('_token'));

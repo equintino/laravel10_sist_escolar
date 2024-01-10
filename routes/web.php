@@ -9,6 +9,7 @@ use App\Http\Controllers\Painel\PainelAlunoController;
 use App\Http\Controllers\Painel\PainelFuncionarioController;
 use App\Http\Controllers\Painel\PainelImageController;
 use App\Http\Controllers\Painel\PainelProfessorController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
